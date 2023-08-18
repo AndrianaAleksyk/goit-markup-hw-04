@@ -1,0 +1,393 @@
+/*General */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+} 
+
+:root {
+    --font-family: Roboto, sans-serif;
+    --color: #434455;
+    --background-color: #FFFFFF;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+}
+
+p {
+    margin: 0;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, sans-serif;
+    color: #434455;
+    background-color: #FFFFFF;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.link {
+    text-decoration: none;
+}  
+
+img {
+    display: block;
+    max-width: 100%;
+    max-height: 100%;
+}
+/*Header*/
+
+.header {
+    border-bottom: 1px solid #e7e9fc;
+}
+
+.header-container {
+    display: flex;
+}
+
+.container {
+    max-width: 1158px;
+    margin: 0 auto;
+    padding: 0 15px 0 15px;
+    
+}
+
+.nav-main {
+    align-items: center;
+    display: flex;
+}
+
+.web-logo {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+}
+
+.studio-logo {
+    color: var(--nav-log-foot-color, #2e2f42);
+}
+
+.nav-main-list {
+    display: flex;
+    gap: 40px;
+}
+
+.nav-main-item {
+    padding: 24px 0;
+}
+
+.nav-link {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    font-style: normal;
+    text-transform: uppercase;
+    color: var(--nav-log-foot-color, #2e2f42);
+    margin-right: 40px;
+    padding: 24px 0;
+}
+
+.link-nav:hover,
+.link-nav:focus {
+    color: #404bbf;
+}
+
+.address {
+    font-style: normal;
+}
+.address-link {
+    color: var(--adres-text-color, #434455);
+    font-size: 16px;
+    line-height: 1.5em;
+    letter-spacing: 0.02em;
+    font-weight: 400;
+}
+.address-link:hover,
+.address-link:focus {
+    color: #404bbf;
+}
+
+/*Service section*/
+
+.service {
+    background-color: #2e2f42;
+    padding: 188px 0;
+}
+.service-section {
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+    max-width: 496px;
+    margin: 0 auto;
+}
+.service-button {
+    background-color: #4D5AE5;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #ffffff;
+    cursor: pointer;
+    display: block;
+    min-width: 169px;
+    height: 56px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+
+/* Advantages section*/
+
+.our-advantures {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    font-size: 20px;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    margin-bottom: 8px;
+}
+
+.advantages {
+    padding: 120px 0;
+}
+.goals {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.service-button:hover,
+.service-button:focus  {
+    background-color: #404BBF;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+}
+
+.advantages-list {
+    display: flex;
+    gap: 24px;   
+}
+
+.advantages-list-item {
+    width: calc((100% - 72px) / 4);
+}
+
+/*Work section*/
+
+.work-section {
+    padding-bottom: 120px;
+}
+
+.work {
+font-size: 36px;
+line-height: 1.11;
+text-align: center;
+letter-spacing: 0.02em;
+text-transform: capitalize;
+color: #2e2f42;
+margin-bottom: 72px;
+}
+
+.work-list {
+    display: flex;
+    gap: 24px;
+}
+
+.work-list-item {
+    width: calc((100% - 48px) / 3);
+}
+
+/*Team section*/
+
+.team {
+    background-color: #F4F4FD;
+    padding: 120px 0;
+}
+.our-team {
+    font-size: 36px;
+    line-height: 1.11;
+    line-height: 1.11;
+    text-align: center;
+    letter-spacing: 0.02em;
+    text-transform: capitalize;
+    color: #2e2f42;
+    margin-bottom: 72px;
+}
+.list-images {
+    background-color: #FFFFFF;
+    border-radius: 0px 0px 4px 4px;
+}
+.team-title {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color: #2e2f42;
+    text-align: center;
+    margin-bottom: 8px;
+}
+.profesion {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    text-align: center;
+}
+
+.our-team-list {
+    display: flex;
+    gap: 24px;
+}
+
+.position-name {
+    padding: 32px 0;
+
+}
+
+.list-images {
+    width: calc((100% - 72px) / 4);
+}
+
+/*Footer*/
+.footer {
+background-color: var(--nav-log-foot-color, #2e2f42);
+padding: 100px 0;
+}
+
+.footer-logo {
+    color: #f4f4fd;
+}
+
+.marketing {
+    line-height: 1.5;
+    color: #f4f4fd;
+    letter-spacing: 0.02em;
+    max-width: 264px;
+}
+.web-logo-footer {
+    font-family: "Raleway", sans-serif;
+    font-weight: 800;
+    font-size: 18px;
+    line-height: 1.17;
+    font-style: normal;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: #4d5ae5;
+    margin-right: 76px;
+    display: inline-block;
+    margin-bottom: 16px;
+}
+
+/*Portfolio*/
+
+.navigation-section {
+    padding-top: 96px;
+    padding-bottom: 120px;
+}
+
+.navigation-list {
+    display: flex;
+    justify-content: center;
+    gap: 24px;
+    margin-bottom: 72px;
+}
+
+.button-item {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
+    color: #4d5ae5;
+    background-color: #F4F4FD;
+    cursor: pointer;
+    padding: 12px 24px;
+    border: 1px solid #e7e9fc;
+    border-radius: 4px;
+
+}
+ .button-item:hover,
+ .button-item:focus {
+    color:#FFFFFF;
+    background-color: #404BBF;
+    border: 1px solid transparent;
+ }
+
+ .offers-list {
+     display: flex;
+     flex-wrap: wrap;
+     column-gap: 24px;
+     row-gap: 48px;
+ }
+ 
+ .offers-list-item {
+     width: calc((100% - 48px) / 3);
+ }
+
+/*Images list*/
+.image-name {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
+    color:#2e2f42;
+    margin-bottom: 8px;
+}
+.image-action {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+}
+.details-container {
+    padding: 32px 16px;
+    border: 1px solid #e7e9fc;
+    border-top: none;
+    margin-bottom: 8px;
+}
+
+
+
+
+
+
+
+
+
+
+
