@@ -151,15 +151,17 @@ img {
 }
 
 .hero-title {
-    font-size: 56px;
-    text-align: center;
-    letter-spacing: 0.02em;
-    line-height: 1.07;
-    color: #ffffff;
     max-width: 496px;
     margin: 0 auto;
     margin-bottom: 48px;
+    font-size: 56px;
+    text-align: center;
+    letter-spacing: 1.12px;
+    line-height: 1.07;
+    color: #ffffff;
     font-family: Roboto;
+    font-weight: 700;
+    line-height: 60px;
 }
 
 .hero-button {
